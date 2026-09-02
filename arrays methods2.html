@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+<script>
+
+
+let colors=["red","blue","gold","green","cyan"];
+console.log(colors);
+
+//Adding new elements into array
+
+// push()=>end of the array
+
+colors.push("white","black");
+console.log(colors);
+
+//unshift()
+
+
+colors.unshift("purple","gold");
+console.log(colors);
+
+//spilce()
+
+colors.splice(3,0,"hello","hai");
+console.log(colors);
+
+//Remove the  elements into array
+
+
+// pop()
+
+colors.pop();
+colors.pop();
+console.log(colors);
+
+
+//shift()
+
+colors.shift();
+console.log(colors);
+
+
+
+//splice()
+
+// colors.splice(3);
+
+colors.splice(3,2);
+console.log(colors);
+
+
+//sort()=>asc order
+
+let mynumbers=[10,12,2,123,85,8,821];
+console.log(mynumbers);
+
+let asc=mynumbers.sort(function(a,b){
+return a-b;
+}); //
+
+console.log(asc);
+
+
+let desc=mynumbers.sort(function(a,b){
+return b-a;
+}); //
+
+console.log(desc);
+
+
+//concat()=>join  the arrays
+
+let even=[2,4,6,8];
+let odd=[1,3,5,7];
+
+let all=even.concat(odd);// old way
+console.log(all);
+
+//es6=> spread operator(...)=> used to copy  object or array data quickly
+
+let hello=[...even,...odd];
+console.log(hello.length);
+
+let salaries=[5000,9000,15000,85000,96000];
+console.log(salaries);
+console.log(Math.max(10,20,30));
+console.log(Math.max(...salaries));
+console.log(Math.min(...salaries));
+
+
+// reduce
+
+let prices=[9000,6000,7000,5000,3000];
+let totalPrice=prices.reduce((total,price)=>total+price,0);
+console.log(totalPrice);
+
+//Destructuring
+
+let mycolors=["red","blue","green","cyan","gold"];
+console.log(mycolors);
+
+let a=mycolors[0];
+let b=mycolors[1];
+let c=mycolors[2];
+let d=mycolors[3];
+let e=mycolors[4];
+
+console.log(a,b,c,d,e);
+
+
+let[p,q,r,s,t]=mycolors;
+console.log(p,q,r,s,t);
+
+
+
+
+</script>
+    
+</body>
+</html>

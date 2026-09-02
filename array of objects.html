@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+</head>
+<body>
+    
+
+<script>
+
+
+// array of objects
+
+let students=[
+{sid:101,name:"a",course:"java",fees:1000},
+{sid:102,name:"b",course:"python",fees:9000},
+{sid:103,name:"c",course:"java",fees:3000},
+{sid:104,name:"d",course:"react",fees:7000},
+{sid:105,name:"e",course:"python",fees:2000}
+
+]
+
+console.log(students);
+
+console.log(students[0]);
+console.log(students[1]);
+
+console.log(students[0].sid);
+console.log(students[1].sid);
+console.log(students[2].sid);
+console.log(students[3].sid);
+console.log(students[4].sid);
+
+// wap print all students id,name
+
+
+students.map(function(s){
+    console.log(s.sid,s.name,s.course,s.fees);//101 102 103
+});
+
+
+// wap print only java students
+
+let javastudents=students.filter(function(s){
+    return s.course==="java"
+});
+
+console.log(javastudents);
+
+// wap find first python student
+
+let firstpythonstudent=students.find(function(s){
+    return s.course=="python";
+});
+
+console.log(firstpythonstudent);
+
+
+// wap find the total fees
+
+let totalFees=students.reduce((sum,s)=>sum+s.fees,0);
+console.log(totalFees);
+
+
+
+</script>
+</body>
+</html>

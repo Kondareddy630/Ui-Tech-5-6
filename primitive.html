@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+
+<script>
+
+/*
+
+// number
+
+let a=100;
+let b=-9685;
+let c=0b1010;
+let d=2e3;
+let e=0o456;
+let f=85.74;
+
+console.log(typeof(a), typeof(b),typeof(c),typeof(d),typeof(e),typeof(f));
+
+// parseInt(),parseFloat()
+
+let x="100.45";
+let y="200.12";
+let z=parseInt(x)+parseInt(y);
+let z1=parseFloat(x)+parseFloat(y);
+console.log(z1);
+
+// how to verify is a number or not? isNaN()
+
+let num=100;
+console.log(isNaN(num));// true
+
+// 
+
+let age="hello";
+(isNaN(age))?console.log("Age must be number"):console.log(age);
+
+
+// 
+
+let price=9000;
+console.log(price.toLocaleString('en-in',{style:"currency",currency:"INR",minimumFractionDigits:0}));
+
+console.log(price.toLocaleString('en-us',{style:"currency",currency:"USD",minimumFractionDigits:0}))
+
+
+
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+
+
+let mynum=9007199254740999987675567886545n;
+console.log(mynum);
+console.log(typeof(mynum));
+
+*/
+
+
+// string
+
+/*
+
+let str1='Good Morning';
+let str2="Good Morning"; // String literals
+
+console.log(str1);
+console.log(str2);
+
+let str3=`  
+hello
+students
+how 
+are you?
+` ; // Temple literals
+
+console.log(str3);
+
+let name="raju";
+let balance=5000;
+let msg="Hello" + " " + name + " " + "your account is=" + balance;
+
+let msg1=`Hello ${name} your account balance=${balance}`;
+console.log(msg);
+console.log(msg1);
+
+let a=100;
+let b=200;
+console.log(a+ "+" + b + "=" + (a+b));
+console.log(` ${a} +${b}=${a+b}`);
+
+// string methods and properties
+
+
+let city="hyderabad";
+
+// length
+console.log(city.length);
+
+// toUpperCase();
+console.log(city.toUpperCase());
+
+// toLowerCase()
+console.log(city.toLowerCase());
+
+let username="Arun kumar";
+console.log(username);
+
+//charAt()
+console.log(username.charAt(0));
+console.log(username.charAt(1));
+console.log(username.charAt(2));
+//charCodeAt()
+console.log(username.charCodeAt(0));
+console.log(username.charCodeAt(1));
+
+// wap find username should start with capital letter or not?
+
+(username.charAt(0)>='A' && username.charAt(0)<='Z')?console.log("Valid username"):console.log("Invalid Username");
+
+(username.charCodeAt(0)>=65 && username.charCodeAt(0)<=90)?console.log("Valid username"):console.log("Invalid Username");
+
+
+// indexOf()
+
+let email="abcdgmail.com";
+console.log(email);
+
+console.log(email.indexOf('d')); //3
+console.log(email.indexOf('z'));  // -1
+
+// wap verify user email valid or invalid
+
+(email.indexOf("@")==-1)?console.log("Invalid email"):console.log("Valid email");
+
+
+//split()
+
+// wap print the string in reverse without loops
+
+let message="Good";
+console.log(message);
+console.log(message.split(""));
+
+// reverse()
+console.log(message.split("").reverse());
+
+// join()
+console.log(message.split("").reverse().join(""));
+
+
+// slice()
+
+
+let tech="Java Script";
+console.log(tech.slice(0,4));
+
+console.log(tech.slice(0,3));
+console.log(tech.slice(0,4));
+console.log(tech.slice(-5,-2));
+
+
+//substr()
+console.log(tech.substr(0,4));
+console.log(tech.substr(2,5));
+console.log(tech.slice(-5,-2));
+
+
+//subString()
+
+console.log(tech.substring(0,4));
+console.log(tech.substring(-5,-2));
+
+*/
+
+// boolean
+
+let stock=true;
+let isMarried=false;
+
+console.log(typeof(stock));
+console.log(typeof(isMarried));
+
+console.log(true+true);//2
+console.log(true+100);//101
+console.log(true+"hello");// truehello
+console.log(true+parseInt("10"));//11
+console.log(true+parseInt("20abc"));//21
+console.log(true+parseInt("50abc10"));//51
+
+
+// undefined
+
+// let salary;
+// console.log(salary);
+// console.log(typeof(salary));
+
+
+
+// null
+
+
+// let age=prompt("Enter your age");
+// console.log(age);
+
+
+
+// symbol()
+
+
+let sid=Symbol();
+
+let emp={
+
+    [sid]:101,// hidden field
+    name:"raju",
+    course:"java",
+    fees:8000,
+    loc:"hyd"
+}
+
+console.log(Object.keys(emp));
+
+</script>
+    
+</body>
+</html>

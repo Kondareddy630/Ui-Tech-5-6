@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mt-5">
+
+
+  <table class="table table-bordered shadow table-striped">
+
+    <thead>
+
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Fees</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+
+    <tbody id="hello">
+
+    </tbody>
+
+  </table>
+
+
+<script>
+
+let students=[
+
+{sid:101,name:"a",course:"java",fees:1000,phone:112233},
+{sid:102,name:"b",course:"ui",fees:8000,phone:77889944},
+{sid:103,name:"c",course:"python",fees:4000,phone:11223333},
+{sid:104,name:"d",course:"react",fees:4500,phone:85967485},
+{sid:105,name:"e",course:"angular",fees:3200,phone:41526336},
+{sid:106,name:"f",course:"angular",fees:3200,phone:41526336},
+
+
+
+]
+
+students.map((s)=>{
+
+  document.getElementById("hello").innerHTML +=  `
+  <tr>
+    <td>${s.sid}</td>
+    <td>${s.name}</td>
+    <td>${s.course}</td>
+    <td>${s.fees}</td>
+    <td>${s.phone}</td>
+  </tr>
+  
+  `
+})
+
+
+
+</script>
+
+
+    
+</body>
+</html>

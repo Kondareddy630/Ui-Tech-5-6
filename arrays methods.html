@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+<script>
+
+
+let technologies=["html","css","js","bootstrap","react","angular"];
+console.log(technologies);
+
+// for loop
+
+for(let i=0;i<technologies.length;i++)
+{
+    console.log(technologies[i]);
+
+}
+
+
+//iterations
+
+
+let numbers=[1,2,3,4,5,6,7,8,9,10];
+console.log(numbers);
+
+//map()
+
+numbers.map(function(num,index){
+    console.log(num,index); //1 2 .......10
+
+});
+
+
+let square=numbers.map(function(num){
+  return num*num;
+});
+
+console.log(square);
+
+// foreach()
+
+numbers.forEach(function(num,index){
+console.log(num,index);
+});
+
+
+let square1=numbers.forEach(function(num){
+  return num*num;
+});
+
+console.log(square1);
+
+//filter()
+
+
+// read only even numbers
+
+let even=numbers.filter(function(num){
+   return num%2==0;
+});
+
+console.log(even);
+
+
+// find()
+
+let mynumbers=[81,5,10,9,11,13,14];
+
+console.log(mynumbers);
+
+// wap find the first even number
+
+let myeven=mynumbers.find(function(num){
+  return num%2==0;//8
+
+});
+
+console.log(myeven);
+
+
+</script>
+    
+</body>
+</html>

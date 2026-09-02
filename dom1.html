@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .danger{
+            color:red;
+        }
+
+        .success{
+            color:green;
+        }
+
+        .bg-pink{
+            background-color: pink;
+        }
+
+        .bg-blue{
+            background-color: lightskyblue;
+        }
+
+        .padding{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+<script>
+
+let p1=document.createElement("p");
+document.body.appendChild(p1);
+
+p1.innerText="Python Full Stack";
+
+p1.style.textAlign="center";
+p1.style.fontSize="60px";
+p1.style.fontFamily="cursive";
+p1.style.fontWeight="bold";
+
+// p1.className="danger bg-blue padding";
+
+p1.classList.add("danger");
+p1.classList.add("bg-blue");
+p1.classList.add("padding");
+
+p1.classList.remove("danger");
+p1.classList.remove("padding");
+p1.classList.remove("bg-blue");
+
+
+
+
+//createElement()
+
+
+let h1=document.createElement("h1");
+
+h1.innerText="Java Full Stack";
+
+document.body.appendChild(h1);
+
+
+
+let image=document.createElement("img");
+document.body.appendChild(image);
+image.setAttribute("src","images/baby3.jpg");
+image.setAttribute("width","100px");
+image.setAttribute("height","100px");
+
+
+let p=document.createElement("p");
+
+p.innerHTML="<b>Hello students</b>";
+
+p.style.color="red";
+p.style.textAlign="center";
+p.style.fontSize="50px";
+p.style.fontFamily="cursive";
+p.style.backgroundColor="pink";
+p.style.padding="10px";
+p.style.boxShadow="2px 2px 2px black";
+
+document.body.appendChild(p);
+
+
+
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

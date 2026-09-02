@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    
+<script>
+
+// no arg, no return type
+
+
+
+function printNumbers(start,end,increment)
+{
+
+    for(i=start;i<=end;i=i+increment)
+    {
+    console.log(i);
+    }
+
+}
+ 
+printNumbers(1,15);
+
+printNumbers(1,4);
+
+printNumbers(1,20,2);
+
+printNumbers(10,100,20);
+
+
+
+// with arg no return type
+function sum(x,y)
+{
+    let a=x;
+    let b=y;
+    let c=a+b;
+    console.log(c);
+}
+
+sum(11,19);//caling 
+
+sum(7,85);
+sum(7,9);
+sum(4,6);
+
+
+/*
+function student(...details){
+
+let[sid,name,course,fees,loctions,address,myfun] =details;
+console.log(sid,name,fees);
+
+
+}
+
+student(101,"raju","java",8000,["hyd","pune"],{city:"hyd",state:"ts"},function(){console.log("i am a function")});
+*/
+
+
+/*
+function student(sid,name,course,fees ,...moreDetails){
+
+console.log(sid,name,course,fees);
+console.log(moreDetails);
+
+
+}
+
+student(101,"raju","java",8000,["hyd","pune"],{city:"hyd",state:"ts"},function(){console.log("i am a function")});
+
+*/
+
+
+
+function mysum()
+{
+    let a=100;
+    let b=200;
+    let c=a+b;
+       return c; //
+
+}
+
+
+let r1=mysum();//300
+console.log(r1);
+
+let r2=mysum();
+console.log(r2);
+
+
+// with arg , with return type
+
+
+function mul(x,y){
+
+    let a=x;
+    let b=y;
+    let c=a*b;
+     return c;
+
+}
+
+let r3=mul(4,5);
+console.log(r3);
+
+let r4=mul(96,85);
+console.log(r4);
+
+
+
+
+</script>
+
+
+</body>
+</html> 

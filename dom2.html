@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+
+<h1 id="hello">Java Full Stack</h1>
+
+<h1>Python Full Stack</h1>
+
+<img src="images/baby1.jpg" width="200px" height="200px">
+<img src="images/baby2.jpg" width="200px" height="200px">
+<img src="images/baby3.jpg" width="200px" height="200px" id="img1">
+
+<p class="hello">Para1</p>
+<p class="hello">Para2</p>
+<p class="hello">Para3</p>
+
+
+<p>Para4</p>
+<p>Para5</p>
+<p>Para6</p>
+
+
+
+<a href="">Facebook</a>
+<a href="">Youtube</a>
+<a href="">Twitter</a>
+<a href="">Gmail</a>
+
+
+<script>
+
+
+//Tagname
+
+
+let a=document.getElementsByTagName("a");
+console.log(a);
+
+// a[0].style.textDecoration="none";
+// a[1].style.textDecoration="none";
+// a[2].style.textDecoration="none";
+// a[3].style.textDecoration="none";
+
+
+for(let link  of  a)
+{
+  console.log(link.style.textDecoration="none")
+}
+
+//class
+
+let paras=document.getElementsByClassName("hello");
+console.log(paras);
+
+console.log(paras[0].style.color="green");
+console.log(paras[1].style.color="red");
+console.log(paras[2].style.color="blue");
+
+// for Of()
+
+  for(let p  of  paras)
+  {
+
+    console.log(p.style)
+  }
+
+
+//Dom Methods
+
+//based id
+
+document.getElementById("hello").innerText="Ui Full Stack";
+
+// document.getElementById("img1").style.borderRadius="50%";
+// document.getElementById("img1").style.boxShadow="4px 4px 4px black";
+// document.getElementById("img1").style.border="6px dotted red";
+
+let image=document.getElementById("img1");
+image.style.border="4px dotted red";
+image.style.borderRadius="50%";
+image.style.boxShadow="0px 0px 20px black";
+
+
+
+</script>
+
+
+    
+</body>
+</html>

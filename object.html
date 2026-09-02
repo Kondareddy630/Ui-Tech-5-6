@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+</head>
+<body>
+    
+
+<script>
+
+    // object
+
+    let student={
+        
+        sid:101,
+        name:"raju",
+        course:"java",
+        fees:9000,
+       
+    };
+
+    console.log(student);
+
+
+// how to read the only object keys
+
+console.log(Object.keys(student));
+console.log(Object.values(student));
+
+// how to print the object values notations [],.
+
+console.log(student.sid);
+console.log(student.name);
+console.log(student.course);
+console.log(student["fees"]);
+
+// Object Destructuring
+
+let{sid,name,course,fees}=student;
+console.log(sid,name,course,fees);
+
+
+//nested objects
+
+
+let emp={
+
+    empno:101,
+    name:"ravi",
+    job:"manager",
+    salary:80000,
+
+    address:{
+       city:"hyd",
+       state:"ts",
+       pincode:500072
+
+    },
+
+    account:{
+
+           saving:{
+               accno:112233,
+               bal:1000
+           },
+           current:{
+                 accno:778899,
+                bal:5000
+           }
+    }
+
+
+};
+
+console.log(emp);
+console.log(emp.address);
+
+console.log(emp.empno);
+console.log(emp.name);
+console.log(emp.address.city);
+console.log(emp.address.state);
+console.log(emp.address.pincode);
+
+
+let{city,state,pincode}=emp.address;
+
+console.log(city);
+console.log(state);
+console.log(pincode);
+
+console.log(emp.account.current.accno);
+console.log(emp.account.current.bal);
+
+ let{accno,bal} =emp.account.current;
+ console.log(accno,bal);
+
+ let{accno:acno,bal:mybalance}=emp.account.saving;
+ console.log(accno,mybalance);
+
+// object with logic
+
+
+let mystudent={
+
+    name:"raju",
+    eng:80,
+    tel:90,
+    sc:60,
+    mat:100,
+
+    total:function(){
+        return mystudent.eng+mystudent.tel+mystudent.sc+mystudent.mat
+    },
+
+    result:function(){
+        return (mystudent.eng>=35  && mystudent.tel>=35 && mystudent.sc>=35 && mystudent.mat>=35)?
+        "Pass":"Fail"
+    }
+
+}
+
+console.log(mystudent);
+
+console.log(mystudent.total());
+console.log(mystudent.result());
+
+
+
+</script>
+</body>
+</html>
