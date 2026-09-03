@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body class="container mt-5">
+
+
+<button class="btn btn-primary" onclick="sayHtml()">Html</button>
+<button class="btn btn-secondary" onclick="sayCss()">Css</button>
+
+<button id="btn1" class="btn btn-dark">Send</button>
+
+
+<p id="p1"></p>
+
+<script>
+
+function sendData()
+{
+    alert("Hello how are you?");
+}
+
+document.getElementById("btn1").addEventListener("click",sendData);
+
+
+
+function sayHtml()
+{
+
+    document.getElementById("p1").innerText="Hello html..."
+}
+
+
+function sayCss()
+{
+    document.getElementById("p1").innerText="Hello css..."
+}
+
+
+let button=document.createElement("button");
+button.innerText="Click me";
+button.addEventListener("click",message);
+document.body.appendChild(button);
+
+
+
+function message()
+{
+    alert("Hello button..")
+}
+
+
+</script>
+    
+</body>
+</html>
