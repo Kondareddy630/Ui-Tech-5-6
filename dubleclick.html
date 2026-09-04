@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body class="container mt-5">
+
+
+<img src="images/food10.jpg" width="200px" height="200px" id="img1">
+
+
+<img src="images/food9.jpg" width="200px" height="200px" id="img2">
+
+<marquee id="m1">Hello students</marquee>
+
+
+<h1 id="h1">Java Full Stack</h1>
+
+
+<div class="p-4 bg-secondary  w-50  m-auto text-white" style="height: 200px;" id="div1">
+
+  
+    <p id="hello"></p>
+
+</div>
+
+
+
+<script>
+
+
+document.getElementById("div1").addEventListener("mousemove",function(e){
+
+    document.getElementById("hello").innerText=`
+    X position:${e.clientX}
+    Y position:${e.clientY}
+    
+    `
+
+})
+
+    document.getElementById("h1").addEventListener("mouseover",function(){
+        this.style.color="red";
+    });
+
+ document.getElementById("h1").addEventListener("mouseout",function(){
+        this.style.color="blue";
+    });
+
+document.getElementById("img2").addEventListener("mouseover",function(){
+
+    this.setAttribute("src","images/food10.jpg")
+
+});
+
+document.getElementById("img2").addEventListener("mouseout",function(){
+
+    this.setAttribute("src","images/food6.jpg");
+
+});
+
+
+    document.getElementById("m1").addEventListener("mouseover",function(){
+         this.stop();
+    });
+
+    document.getElementById("m1").addEventListener("mouseout",function(){
+         this.start();
+    });
+    
+
+  
+document.getElementById("img1").addEventListener("dblclick",function(){
+
+
+
+  this.style.transform="scale(2,2) rotate(360deg)";
+  this.style.borderRadius="50%";
+  this.style.transition="1s";
+
+
+});
+
+
+</script>
+    
+</body>
+</html>
